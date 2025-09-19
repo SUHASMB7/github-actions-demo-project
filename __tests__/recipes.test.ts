@@ -1,9 +1,9 @@
-import request from "supertest"
+import request from "supertest";
 import { server, startServer, stop } from "../src/index";
 
 afterAll(() => {
   stop();
-});
+
 
 describe("Recipes API Endpoints", () => {
   test("GET /recipes/:id", async () => {
